@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
@@ -9,7 +9,8 @@ import { DarkModeService } from '../services/dark-mode.service';
     CommonModule
   ],
   templateUrl: './dark-mode-toggle.component.html',
-  styleUrls: ['./dark-mode-toggle.component.sass']
+  styleUrls: ['./dark-mode-toggle.component.sass'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class DarkModeToggleComponent {
   
