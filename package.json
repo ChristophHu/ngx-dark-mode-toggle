@@ -1,12 +1,15 @@
 {
   "name": "ngx-dark-mode-toggle",
-  "version": "0.0.0",
+  "version": "19.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "preprocess": "tailwindcss -c ./projects/demo/tailwind.config.js -o ./projects/ngx-dark-mode-toggle/src/lib/tailwind.scss & ng build ngx-dark-mode-toggle",
+    "publish": "cd dist/ngx-dark-mode-toggle && npm publish --access public"
+
   },
   "private": true,
   "dependencies": {
@@ -18,7 +21,9 @@
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
+    "@christophhu/ngx-icons": "^19.1.1",
     "@tailwindcss/postcss": "^4.1.1",
+    "ngx-markdown": "^19.1.1",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.1.1",
