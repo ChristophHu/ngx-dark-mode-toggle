@@ -1,6 +1,6 @@
 {
   "name": "@christophhu/ngx-dark-mode-toggle",
-  "version": "19.2.3",
+  "version": "19.2.4",
   "description": "Angular dark mode toggle library for toggling between light and dark mode with local storage support.",
   "license": "MIT",
   "author": {

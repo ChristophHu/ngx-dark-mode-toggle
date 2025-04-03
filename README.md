@@ -48,6 +48,15 @@ export class OverviewComponent {
 }
 ```
 
+### Styling
+In Case there are no styles applied to the toggle, you can add the `tailwindcss.css` file in `node_modules/@christophhu/ngx-dark-mode-toggle/lib/`. You have to import it to your `angular.json` file:
+```json
+"styles": [
+  "src/styles.css",
+  "node_modules/@christophhu/ngx-dark-mode-toggle/lib/tailwindcss.css"
+],
+```
+
 ## License
 This project is licensed under the MIT License.
 
