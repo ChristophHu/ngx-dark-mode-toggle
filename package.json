@@ -23,6 +23,7 @@
     "@christophhu/ngx-dark-mode-toggle": "^19.2.1",
     "@christophhu/ngx-icons": "^19.1.1",
     "@tailwindcss/postcss": "^4.1.1",
+    "angular-cli-ghpages": "^2.0.3",
     "ngx-markdown": "^19.1.1",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",

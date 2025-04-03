@@ -7,6 +7,11 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/5.6.2-000000?style=for-the-badge&logo=typescript&logoColor=white&label=Typescript&labelColor=007ACC&color=000000">
 </p>
 
+## Demo
+<p align="center">
+  <a href="https://christophhu.github.io/ngx-dark-mode-toggle"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/img/ngx-dark-mode-toggle.png" width="500" alt="image" /></a>
+</p>
+
 ## Description
 This Repository contains a simple Angular library for toggling between light and dark mode. It is designed to be easy to use and integrate into any Angular application.
 It uses the `localStorage` API to save the user's preference for dark mode, so that the setting persists across page reloads.
