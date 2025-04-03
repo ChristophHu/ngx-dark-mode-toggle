@@ -1,6 +1,6 @@
 {
-  "name": "ngx-dark-mode-toggle",
-  "version": "19.2.0",
+  "name": "@christophhu/ngx-dark-mode-toggle",
+  "version": "19.2.1",
   "description": "Angular dark mode toggle component with local storage support",
   "license": "MIT",
   "author": {

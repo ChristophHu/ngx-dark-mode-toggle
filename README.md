@@ -13,6 +13,11 @@
 This Repository contains a simple Angular library for toggling between light and dark mode. It is designed to be easy to use and integrate into any Angular application.
 It uses the `localStorage` API to save the user's preference for dark mode, so that the setting persists across page reloads.
 
+## Installation
+```bash
+npm i @christophhu/ngx-dark-mode-toggle
+```
+
 ## Use
 ### With default toggle
 ```html
