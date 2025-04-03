@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DarkModeToggleComponent } from "../../../../../ngx-dark-mode-toggle/src/lib/dark-mode-toggle.component";
+import { DarkModeToggleComponent } from "../../../../../ngx-dark-mode-toggle/src/lib/components/dark-mode-toggle.component";
 
 @Component({
   selector: 'app-overview',

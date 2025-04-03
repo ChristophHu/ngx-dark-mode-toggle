@@ -1,24 +1,17 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 type Theme = 'light' | 'dark'
 
-@Component({
-  selector: 'dark-mode-toggle',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './dark-mode-toggle.component.html',
-  styleUrls: ['./dark-mode-toggle.component.sass']
+@Injectable({
+  providedIn: 'root'
 })
-export class DarkModeToggleComponent {
+export class DarkModeService {
   theme: Theme = 'light'
   body: any
 
   constructor() {
     this.body = document.body
-    this.theme = this.body.dataset['theme'] || localStorage['theme'] || 'light'    
+    this.theme = this.body.dataset['theme'] || localStorage['theme'] || 'light'
   }
 
   toggleTheme() {
@@ -33,5 +26,9 @@ export class DarkModeToggleComponent {
         break
     }
     this.body.dataset['theme'] = localStorage['theme']
+  }
+
+  getTheme() {
+    return this.theme
   }
 }
