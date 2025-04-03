@@ -1,12 +1,36 @@
 {
   "name": "ngx-dark-mode-toggle",
   "version": "19.2.0",
+  "description": "Angular dark mode toggle component with local storage support",
+  "license": "MIT",
+  "author": {
+    "name": "Christoph Huschenhoefer",
+    "email": "christoph@nxt.codes"
+  },
+  "keywords": [
+    "angular",
+    "darkmode",
+    "theme",
+    "localstorage"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophhu/ngx-dark-mode-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christophhu/ngx-dark-mode-toggle/issues"
+  },
+  "homepage": "https://github.com/christophhu/ngx-dark-mode-toggle#readme",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+  }
+  
 }
