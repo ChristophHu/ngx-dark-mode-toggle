@@ -9,7 +9,7 @@
 
 ## Demo
 <p align="center">
-  <a href="https://christophhu.github.io/ngx-dark-mode-toggle"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/img/ngx-dark-mode-toggle.png" width="500" alt="image" /></a>
+  <a href="https://christophhu.github.io/ngx-dark-mode-toggle"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/img/ngx-dark-mode-toggle.gif" width="500" alt="image" /></a>
 </p>
 
 ## Description
