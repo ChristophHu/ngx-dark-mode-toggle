@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DarkModeToggleComponent } from "../../../../../ngx-dark-mode-toggle/src/lib/components/dark-mode-toggle.component";
+import { DarkModeService } from '../../../../../ngx-dark-mode-toggle/src/lib/services/dark-mode.service';
 
 @Component({
   selector: 'app-overview',
@@ -13,6 +14,9 @@ import { DarkModeToggleComponent } from "../../../../../ngx-dark-mode-toggle/src
 })
 export class OverviewComponent {
   
-  constructor() {}
+  constructor(private _darkModeService: DarkModeService) {}
 
+  toggleTheme() {
+    this._darkModeService.toggleTheme()
+  }
 }
