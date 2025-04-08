@@ -3,7 +3,7 @@
 ## Frameworks and Languages
 <p align="left">
   <img alt="Static Badge" src="https://img.shields.io/badge/19.2.0-000000?style=for-the-badge&logo=angular&logoColor=white&label=Angular&labelColor=000000"><br>
-  <img alt="Static Badge" src="https://img.shields.io/badge/4.0.17-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&label=Tailwind&labelColor=06B6D4&color=000000"><br>
+  <img alt="Static Badge" src="https://img.shields.io/badge/4.1.3-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&label=Tailwind&labelColor=06B6D4&color=000000"><br>
   <img alt="Static Badge" src="https://img.shields.io/badge/5.6.2-000000?style=for-the-badge&logo=typescript&logoColor=white&label=Typescript&labelColor=007ACC&color=000000">
 </p>
 
@@ -49,11 +49,11 @@ export class OverviewComponent {
 ```
 
 ### Styling
-In Case there are no styles applied to the toggle, you can add the `tailwindcss.css` file in `node_modules/@christophhu/ngx-dark-mode-toggle/lib/`. You have to import it to your `angular.json` file:
+You have to add your own style, use the default or add `default.css`. You can use the default style by adding the `default.css` file in `node_modules/@christophhu/ngx-dark-mode-toggle/lib/`. You have to import it to your `angular.json` file:
 ```json
 "styles": [
   "src/styles.css",
-  "node_modules/@christophhu/ngx-dark-mode-toggle/lib/tailwindcss.css"
+  "node_modules/@christophhu/ngx-dark-mode-toggle/lib/default.css"
 ],
 ```
 

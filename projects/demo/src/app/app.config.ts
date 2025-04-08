@@ -4,10 +4,13 @@ import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
 import { provideMarkdown } from 'ngx-markdown';
+import { provideGithubPagesDemo } from '@christophhu/ngx-github-pages-demo';
+import { TemplateComponent } from './template/template.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
+    provideGithubPagesDemo({ username: 'christophhu', repository: 'ngx-github-pages-demo', version: '0.0.3', token: null, template: TemplateComponent }),
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes), 
     provideAnimationsAsync(),

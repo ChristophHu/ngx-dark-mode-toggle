@@ -65,8 +65,8 @@
               }
             ],
             "styles": [
-              "node_modules/@christophhu/ngx-dark-mode-toggle/lib/tailwindcss.css",
-              "projects/demo/src/styles.sass"
+              "projects/demo/src/styles.sass",
+              "node_modules/@christophhu/ngx-github-pages-demo/lib/default.css"
             ],
             "scripts": []
           },
