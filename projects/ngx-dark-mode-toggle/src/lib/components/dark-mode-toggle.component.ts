@@ -9,8 +9,7 @@ import { DarkModeService } from '../services/dark-mode.service';
     CommonModule
   ],
   templateUrl: './dark-mode-toggle.component.html',
-  styleUrls: ['./dark-mode-toggle.component.sass'],
-  encapsulation: ViewEncapsulation.Emulated
+  styleUrls: ['./dark-mode-toggle.component.sass']
 })
 export class DarkModeToggleComponent {
   

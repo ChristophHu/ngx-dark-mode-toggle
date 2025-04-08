@@ -1,2 +1,11 @@
 @custom-variant dark (&:where(.dark, .dark *))
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *))
+
+input:checked
+    + .switch-core
+        // @apply bg-blue-500
+        background-color: rgb(59, 130, 246)
+
+        .switch-button
+            // @apply transform translate-x-6
+            transform: translateX(1.5rem)
