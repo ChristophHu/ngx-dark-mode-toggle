@@ -2,7 +2,7 @@
     <ng-content></ng-content>
 </div>
 <ng-container *ngIf="!content.hasChildNodes()">
-        <label class="inline-flex items-center cursor-pointer">
+        <!-- <label class="inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" class="sr-only peer" (click)="toggleTheme()">
             <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
                 <div class="h-6 p-1 flex justify-between items-center">
@@ -18,14 +18,14 @@
                     </div>
                 </div>
             </div>
-        </label>
+        </label> -->
     <!-- <div class="flex w-full justify-between items-center">
-        <span class="text-gray-400 text-lg">Logger-Toggle</span>
+        <span class="text-gray-400 text-lg">Logger-Toggle</span> -->
         <label class="relative inline-block m-0 p-0 border-0 align-middle cursor-pointer disabled:opacity-60 disabled:pointer-events-none">
-            <input type="checkbox" class="absolute opacity-0 w-px h-px" [name]="'debug'" [disabled]="false">
-            <div class="switch-core relative block flex w-12 h-[24px] m-0 items-center bg-gray-200 transition-colors duration-200 ease-in-out rounded-full">
+            <input type="checkbox" class="absolute opacity-0 w-px h-px" [name]="'debug'" [checked]="getTheme() == 'dark'" [disabled]="false" (click)="toggleTheme()">
+            <div class="switch-core relative block flex w-12 h-[24px] m-0 items-center bg-secondary transition-colors duration-200 ease-in-out rounded-full">
                 <div class="switch-button relative block h-5 w-5 top-0 left-0 m-[2px] bg-white rounded-full overflow-hidden transition-all duration-200 ease-in-out"></div>
             </div>
         </label>
-    </div> -->
+    <!-- </div> -->
 </ng-container>

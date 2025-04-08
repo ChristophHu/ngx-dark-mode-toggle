@@ -6,16 +6,16 @@ type Theme = 'light' | 'dark'
   providedIn: 'root'
 })
 export class DarkModeService {
-  theme: Theme = 'light'
+  theme: Theme = 'dark'
   body: any
 
   constructor() {
     this.body = document.body
-    this.theme = this.body.dataset['theme'] || localStorage['theme'] || 'light'
+    this.theme = this.body.dataset['theme'] || localStorage['theme'] || 'dark'
   }
 
   toggleTheme() {
-    this.theme == 'dark' ? this.theme = 'light' : this.theme = 'dark'
+    this.theme == 'light' ? this.theme = 'dark' : this.theme = 'light'
 
     switch (true) {
       case this.theme == 'dark':

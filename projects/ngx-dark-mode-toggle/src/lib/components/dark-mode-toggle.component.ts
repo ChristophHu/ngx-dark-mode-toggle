@@ -19,4 +19,7 @@ export class DarkModeToggleComponent {
   toggleTheme() {
     this._darkModeService.toggleTheme()
   }
+  getTheme(): string {
+    return this._darkModeService.getTheme()
+  }
 }
