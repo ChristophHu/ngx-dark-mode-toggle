@@ -10,7 +10,7 @@ import { TemplateComponent } from './template/template.component';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
-    provideGithubPagesDemo({ username: 'christophhu', repository: 'ngx-dark-mode-toggle', version: '0.0.3', token: null, template: TemplateComponent }),
+    provideGithubPagesDemo({ username: 'christophhu', repository: 'ngx-dark-mode-toggle', version: '19.2.7', token: null, template: TemplateComponent }),
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes), 
     provideAnimationsAsync(),
