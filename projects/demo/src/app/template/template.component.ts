@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+// import { DarkModeService, DarkModeToggleComponent } from '../../../../ngx-dark-mode-toggle/src/public-api';
 import { DarkModeService, DarkModeToggleComponent } from '@christophhu/ngx-dark-mode-toggle';
 
 @Component({
