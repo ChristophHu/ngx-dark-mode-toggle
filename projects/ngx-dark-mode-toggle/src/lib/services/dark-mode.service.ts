@@ -33,23 +33,5 @@ export class DarkModeService {
 
   toggleTheme() {
     this._theme.next(this.body.dataset['theme'] == 'dark' ? 'light' : 'dark')
-    // this.theme == 'light' ? this.theme = 'dark' : this.theme = 'light'
-
-    // this.theme$.subscribe((theme: Theme) => {
-    // switch (true) {
-    //   case this.theme == 'dark':
-    //     localStorage.setItem('theme', 'dark')
-    //     // localStorage['theme'] = "dark"
-    //     break
-    //   case this.theme == 'light':
-    //     localStorage.setItem('theme', 'light')
-    //     // localStorage['theme'] = "light"
-    //     break
-    // }
-    // this.body.dataset['theme'] = localStorage['theme']
   }
-
-  // getTheme() {
-  //   return this.theme
-  // }
 }
