@@ -2,10 +2,10 @@
     <ng-content></ng-content>
 </div>
 <ng-container *ngIf="!content.hasChildNodes()">
-    <label class="relative inline-block m-0 p-0 border-0 align-middle cursor-pointer disabled:opacity-60 disabled:pointer-events-none">
-        <input type="checkbox" class="absolute opacity-0 w-px h-px" [name]="'debug'" [checked]="getTheme() == 'dark'" [disabled]="false" (click)="toggleTheme()">
-        <div class="switch-core relative block flex w-12 h-[24px] m-0 items-center bg-secondary transition-colors duration-200 ease-in-out rounded-full">
-            <div class="switch-button relative block h-5 w-5 top-0 left-0 m-[2px] bg-light rounded-full overflow-hidden transition-all duration-200 ease-in-out"></div>
+    <label class="toggle">
+        <input type="checkbox" [name]="'debug'" [checked]="(getTheme() | async) == 'dark'" [disabled]="false" (click)="toggleTheme()">
+        <div class="switch-core">
+            <div class="switch-button"></div>
         </div>
     </label>
 </ng-container>

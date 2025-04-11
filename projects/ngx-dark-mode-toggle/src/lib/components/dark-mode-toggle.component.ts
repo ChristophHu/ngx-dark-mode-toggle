@@ -1,11 +1,14 @@
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DarkModeService } from '../services/dark-mode.service';
+import { Observable } from 'rxjs';
+import { Theme } from '../models/theme';
 
 @Component({
   selector: 'dark-mode-toggle',
   standalone: true,
   imports: [
+    AsyncPipe,
     CommonModule
   ],
   templateUrl: './dark-mode-toggle.component.html',
@@ -19,7 +22,7 @@ export class DarkModeToggleComponent {
   toggleTheme() {
     this._darkModeService.toggleTheme()
   }
-  getTheme(): string {
-    return this._darkModeService.getTheme()
+  getTheme(): Observable<Theme> {
+    return this._darkModeService.theme$
   }
 }
