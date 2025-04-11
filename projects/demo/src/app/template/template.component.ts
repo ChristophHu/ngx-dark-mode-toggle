@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
-import { DarkModeService, DarkModeToggleComponent, Theme } from '../../../../ngx-dark-mode-toggle/src/public-api';
+// import { DarkModeService, DarkModeToggleComponent, Theme } from '../../../../ngx-dark-mode-toggle/src/public-api';
 import { Observable } from 'rxjs';
-// import { DarkModeService, DarkModeToggleComponent, Theme } from '@christophhu/ngx-dark-mode-toggle';
+import { DarkModeService, DarkModeToggleComponent, Theme } from '@christophhu/ngx-dark-mode-toggle';
 
 @Component({
   selector: 'app-template',
