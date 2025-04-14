@@ -1,4 +1,3 @@
-import { Routes } from '@angular/router'
-import { pageRoutes } from '@christophhu/ngx-github-pages-demo'
+import { Routes } from '@angular/router';
 
-export const routes: Routes = [...pageRoutes]
+export const routes: Routes = [];

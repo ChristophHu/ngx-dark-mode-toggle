@@ -4,7 +4,7 @@
 <p align="left">
   <img alt="Static Badge" src="https://img.shields.io/badge/19.2.0-000000?style=for-the-badge&logo=angular&logoColor=white&label=Angular&labelColor=000000"><br>
   <img alt="Static Badge" src="https://img.shields.io/badge/4.1.3-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&label=Tailwind&labelColor=06B6D4&color=000000"><br>
-  <img alt="Static Badge" src="https://img.shields.io/badge/5.6.2-000000?style=for-the-badge&logo=typescript&logoColor=white&label=Typescript&labelColor=007ACC&color=000000">
+  <img alt="Static Badge" src="https://img.shields.io/badge/5.7.2-000000?style=for-the-badge&logo=typescript&logoColor=white&label=Typescript&labelColor=007ACC&color=000000">
 </p>
 
 ## Demo
@@ -46,15 +46,6 @@ export class OverviewComponent {
     this._darkModeService.toggleTheme()
   }
 }
-```
-
-### Styling
-You have to add your own style, use the default or add `default.css`. You can use the default style by adding the `default.css` file in `node_modules/@christophhu/ngx-dark-mode-toggle/lib/`. You have to import it to your `angular.json` file:
-```json
-"styles": [
-  "src/styles.css",
-  "node_modules/@christophhu/ngx-dark-mode-toggle/lib/default.css"
-],
 ```
 
 ## License
