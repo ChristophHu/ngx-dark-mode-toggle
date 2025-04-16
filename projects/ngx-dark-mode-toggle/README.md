@@ -9,7 +9,7 @@
 
 ## Demo
 <p align="center">
-  <a href="https://christophhu.github.io/ngx-dark-mode-toggle"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/img/ngx-dark-mode-toggle.gif" width="500" alt="image" /></a>
+  <a href="https://christophhu.github.io/ngx-dark-mode-toggle"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/gif/ngx-dark-mode-toggle.gif" width="500" alt="image" /></a>
 </p>
 
 ## Description
@@ -35,15 +35,27 @@ npm i @christophhu/ngx-dark-mode-toggle
 ```
 
 ```typescript
-import { DarkModeToggleComponent } from "@christophhu/ngx-dark-mode-toggle";
+import { DarkModeService, DarkModeToggleComponent, Theme } from "@christophhu/ngx-dark-mode-toggle";
 import { DarkModeService } from '@christophhu/ngx-dark-mode-toggle';
 
-export class OverviewComponent {
+@Component({
+  ...
+  imports: [
+    DarkModeToggleComponent
+  ],
+  providers: [
+    DarkModeService
+  ]
+})
+export class TestComponent {
   
   constructor(private _darkModeService: DarkModeService) {}
 
   toggleTheme() {
     this._darkModeService.toggleTheme()
+  }
+  getTheme(): Observable<Theme> {
+    return this._darkModeService.theme$
   }
 }
 ```

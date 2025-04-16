@@ -41,6 +41,4 @@ export class TemplateComponent {
   }
 
   isChecked : boolean = true
-
-
 }
