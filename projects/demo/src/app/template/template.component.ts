@@ -1,11 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { DarkModeService, DarkModeToggleComponent, Theme } from '@christophhu/ngx-dark-mode-toggle';
 import { Observable } from 'rxjs';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-template',
   imports: [
-    DarkModeToggleComponent
+    CommonModule,
+    DarkModeToggleComponent,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   templateUrl: './template.component.html',
   styleUrl: './template.component.sass',
@@ -16,8 +22,15 @@ import { Observable } from 'rxjs';
 export class TemplateComponent {
   private _darkModeService: DarkModeService
 
-  constructor(@Inject(DarkModeService) _darkModeService: DarkModeService) {
+  // needed for custom toggle button
+  form: FormGroup
+
+  constructor(@Inject(DarkModeService) _darkModeService: DarkModeService, private _fb: FormBuilder) {
     this._darkModeService = _darkModeService
+
+    this.form = this._fb.group({
+      darkMode: [true]
+    })
   }
 
   toggleTheme() {
@@ -26,4 +39,8 @@ export class TemplateComponent {
   getTheme(): Observable<Theme> {
     return this._darkModeService.theme$
   }
+
+  isChecked : boolean = true
+
+
 }
